@@ -274,7 +274,7 @@ MqttObjectState::addDataNode(const MqttObjectDataNode& pNode, bool forceList) {
 MqttObject::MqttObject(const std::string& pTopic)
     : mTopic(pTopic)
 {
-    mStateTopic = mTopic + "/state";
+    mStateTopic = mTopic + "";
     mAvailabilityTopic = mTopic + "/availability";
 };
 
