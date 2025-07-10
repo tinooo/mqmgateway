@@ -59,19 +59,19 @@ class ExprtkConverter : public DataConverter {
         int mPrecision = -1;
 
         static double int32(const double highRegister, const double lowRegister) {
-            return ConverterTools::toNumber<int32_t>(highRegister, lowRegister, true);
+            return ConverterTools::toNumber<int32_t>(highRegister, lowRegister);
         }
 
         static double uint32(const double highRegister, const double lowRegister) {
-            return ConverterTools::toNumber<uint32_t>(highRegister, lowRegister, true);
+            return ConverterTools::toNumber<uint32_t>(highRegister, lowRegister);
         }
 
         static double flt32(const double highRegister, const double lowRegister) {
-            return ConverterTools::toNumber<float>(highRegister, lowRegister, true);
+            return ConverterTools::toNumber<float>(highRegister, lowRegister);
         }
 
         static double flt32be(const double highRegister, const double lowRegister) {
-            return ConverterTools::toNumber<float>(highRegister, lowRegister);
+            return ConverterTools::toNumber<float>(highRegister, lowRegister, true);
         }
 
         static double int16(const double regValue) {
